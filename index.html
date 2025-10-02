@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Stream - Movie Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo primary-gradient">Ayush Stream</div>
+        <button class="login-btn">Login / Sign Up</button>
+    </header>
+
+    <section class="hero">
+        <h2>Explore movies, series, and anime</h2>
+    </section>
+
+    <div class="filters">
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Animation">Animation</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+        </select>
+        <select id="sortRating">
+            <option value="desc">Rating (High → Low)</option>
+            <option value="asc">Rating (Low → High)</option>
+        </select>
+    </div>
+
+    <div class="grid" id="movieGrid">
+        <!-- Cards dynamically inserted -->
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn">&lt; Prev</button>
+        <button id="nextBtn">Next &gt;</button>
+    </div>
+
+
+
+    <!-- Movie Details Modal -->
+<div id="movieModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImg" src="" alt="">
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalYearRating"></p>
+            <p id="modalGenre"></p>
+            <p id="modalDesc"></p>
+            <button id="watchlistBtn">Add to Watchlist</button>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
